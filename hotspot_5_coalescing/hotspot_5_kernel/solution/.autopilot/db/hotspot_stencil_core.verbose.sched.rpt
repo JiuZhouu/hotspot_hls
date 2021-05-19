@@ -1,0 +1,594 @@
+
+
+================================================================
+== Vitis HLS Report for 'hotspot_stencil_core'
+================================================================
+* Date:           Tue May 18 19:50:08 2021
+
+* Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
+* Project:        hotspot_5_kernel
+* Solution:       solution (Vitis Kernel Flow Target)
+* Product family: virtexuplus
+* Target device:  xcu200-fsgd2104-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  | 3.33 ns | 2.342 ns |   0.90 ns  |
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       49|       49| 0.163 us | 0.163 us |    1|    1| function |
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 50
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 50
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 50, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.34>
+ST_1 : Operation 51 [1/1] (0.00ns)   --->   "%power_center_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %power_center" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 51 'read' 'power_center_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 52 [1/1] (0.00ns)   --->   "%temp_center_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %temp_center" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 52 'read' 'temp_center_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 53 [1/1] (0.00ns)   --->   "%temp_bottom_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %temp_bottom" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 53 'read' 'temp_bottom_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 54 [1/1] (0.00ns)   --->   "%temp_right_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %temp_right" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 54 'read' 'temp_right_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 55 [1/1] (0.00ns)   --->   "%temp_left_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %temp_left" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 55 'read' 'temp_left_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 56 [1/1] (0.00ns)   --->   "%temp_top_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %temp_top" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 56 'read' 'temp_top_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 57 [7/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 57 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 58 [7/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 58 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 59 [7/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 59 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 2.34>
+ST_2 : Operation 60 [6/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 60 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 61 [6/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 61 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 62 [6/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 62 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 2.34>
+ST_3 : Operation 63 [5/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 63 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 64 [5/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 64 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 65 [5/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 65 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 2.34>
+ST_4 : Operation 66 [4/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 66 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 67 [4/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 67 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 68 [4/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 68 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 2.34>
+ST_5 : Operation 69 [3/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 69 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [3/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 70 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 71 [3/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 71 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 2.34>
+ST_6 : Operation 72 [2/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 72 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 73 [2/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 73 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 74 [2/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 74 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 2.34>
+ST_7 : Operation 75 [1/7] (2.34ns)   --->   "%tmp = fadd i32 %temp_center_read, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7]   --->   Operation 75 'fadd' 'tmp' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 76 [1/7] (2.34ns)   --->   "%add1 = fadd i32 %temp_top_read, i32 %temp_bottom_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 76 'fadd' 'add1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 77 [1/7] (2.34ns)   --->   "%add2 = fadd i32 %temp_left_read, i32 %temp_right_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 77 'fadd' 'add2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 2.34>
+ST_8 : Operation 78 [7/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 78 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 79 [7/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 79 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 2.34>
+ST_9 : Operation 80 [6/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 80 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 81 [6/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 81 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 2.34>
+ST_10 : Operation 82 [5/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 82 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 83 [5/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 83 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 2.34>
+ST_11 : Operation 84 [4/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 84 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 85 [4/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 85 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 2.34>
+ST_12 : Operation 86 [3/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 86 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 87 [3/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 87 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 2.34>
+ST_13 : Operation 88 [2/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 88 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 89 [2/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 89 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 2.34>
+ST_14 : Operation 90 [1/7] (2.34ns)   --->   "%tmp0 = fsub i32 %add1, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8]   --->   Operation 90 'fsub' 'tmp0' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 91 [1/7] (2.34ns)   --->   "%tmp1 = fsub i32 %add2, i32 %tmp" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:9]   --->   Operation 91 'fsub' 'tmp1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 2.32>
+ST_15 : Operation 92 [4/4] (2.32ns)   --->   "%mul = fmul i32 %tmp0, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 92 'fmul' 'mul' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 2.32>
+ST_16 : Operation 93 [3/4] (2.32ns)   --->   "%mul = fmul i32 %tmp0, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 93 'fmul' 'mul' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 2.32>
+ST_17 : Operation 94 [2/4] (2.32ns)   --->   "%mul = fmul i32 %tmp0, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 94 'fmul' 'mul' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 2.32>
+ST_18 : Operation 95 [1/4] (2.32ns)   --->   "%mul = fmul i32 %tmp0, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 95 'fmul' 'mul' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 2.34>
+ST_19 : Operation 96 [7/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 96 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 2.34>
+ST_20 : Operation 97 [6/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 97 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 2.34>
+ST_21 : Operation 98 [5/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 98 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 2.34>
+ST_22 : Operation 99 [7/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 99 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 100 [4/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 100 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 101 [4/4] (2.32ns)   --->   "%mul6 = fmul i32 %tmp1, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 101 'fmul' 'mul6' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 2.34>
+ST_23 : Operation 102 [6/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 102 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 103 [3/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 103 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 104 [3/4] (2.32ns)   --->   "%mul6 = fmul i32 %tmp1, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 104 'fmul' 'mul6' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 2.34>
+ST_24 : Operation 105 [5/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 105 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 106 [2/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 106 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 107 [2/4] (2.32ns)   --->   "%mul6 = fmul i32 %tmp1, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 107 'fmul' 'mul6' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 2.34>
+ST_25 : Operation 108 [4/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 108 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 109 [1/7] (2.34ns)   --->   "%power_center_assign = fadd i32 %mul, i32 %power_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11]   --->   Operation 109 'fadd' 'power_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 110 [1/4] (2.32ns)   --->   "%mul6 = fmul i32 %tmp1, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 110 'fmul' 'mul6' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 2.34>
+ST_26 : Operation 111 [3/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 111 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 112 [7/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 112 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 2.34>
+ST_27 : Operation 113 [2/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 113 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 114 [6/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 114 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 2.34>
+ST_28 : Operation 115 [1/7] (2.34ns)   --->   "%tmp2 = fsub i32, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10]   --->   Operation 115 'fsub' 'tmp2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 116 [5/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 116 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 2.34>
+ST_29 : Operation 117 [4/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 117 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 118 [4/4] (2.32ns)   --->   "%mul8 = fmul i32 %tmp2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 118 'fmul' 'mul8' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 2.34>
+ST_30 : Operation 119 [3/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 119 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 120 [3/4] (2.32ns)   --->   "%mul8 = fmul i32 %tmp2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 120 'fmul' 'mul8' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 2.34>
+ST_31 : Operation 121 [2/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 121 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 122 [2/4] (2.32ns)   --->   "%mul8 = fmul i32 %tmp2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 122 'fmul' 'mul8' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 2.34>
+ST_32 : Operation 123 [1/7] (2.34ns)   --->   "%power_center_assign_1 = fadd i32 %power_center_assign, i32 %mul6" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12]   --->   Operation 123 'fadd' 'power_center_assign_1' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 124 [1/4] (2.32ns)   --->   "%mul8 = fmul i32 %tmp2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 124 'fmul' 'mul8' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 2.34>
+ST_33 : Operation 125 [7/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 125 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 2.34>
+ST_34 : Operation 126 [6/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 126 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 2.34>
+ST_35 : Operation 127 [5/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 127 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 2.34>
+ST_36 : Operation 128 [4/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 128 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 2.34>
+ST_37 : Operation 129 [3/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 129 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 2.34>
+ST_38 : Operation 130 [2/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 130 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 2.34>
+ST_39 : Operation 131 [1/7] (2.34ns)   --->   "%power_center_assign_2 = fadd i32 %power_center_assign_1, i32 %mul8" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13]   --->   Operation 131 'fadd' 'power_center_assign_2' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 2.32>
+ST_40 : Operation 132 [4/4] (2.32ns)   --->   "%mul1 = fmul i32 %power_center_assign_2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 132 'fmul' 'mul1' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 2.32>
+ST_41 : Operation 133 [3/4] (2.32ns)   --->   "%mul1 = fmul i32 %power_center_assign_2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 133 'fmul' 'mul1' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 2.32>
+ST_42 : Operation 134 [2/4] (2.32ns)   --->   "%mul1 = fmul i32 %power_center_assign_2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 134 'fmul' 'mul1' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 2.32>
+ST_43 : Operation 135 [1/4] (2.32ns)   --->   "%mul1 = fmul i32 %power_center_assign_2, i32" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 135 'fmul' 'mul1' <Predicate = true> <Delay = 2.32> <CoreInst = "FMul_maxdsp">   --->   Core 86 'FMul_maxdsp' <Latency = 3> <II = 1> <Delay = 2.32> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 2.34>
+ST_44 : Operation 136 [7/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 136 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 2.34>
+ST_45 : Operation 137 [6/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 137 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 2.34>
+ST_46 : Operation 138 [5/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 138 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 2.34>
+ST_47 : Operation 139 [4/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 139 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 2.34>
+ST_48 : Operation 140 [3/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 140 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 2.34>
+ST_49 : Operation 141 [2/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 141 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 2.34>
+ST_50 : Operation 142 [1/7] (2.34ns)   --->   "%temp_center_assign = fadd i32 %mul1, i32 %temp_center_read" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14]   --->   Operation 142 'fadd' 'temp_center_assign' <Predicate = true> <Delay = 2.34> <CoreInst = "FAddSub_fulldsp">   --->   Core 74 'FAddSub_fulldsp' <Latency = 6> <II = 1> <Delay = 2.34> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 143 [1/1] (0.00ns)   --->   "%ret_ln16 = ret i32 %temp_center_assign" [/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:16]   --->   Operation 143 'ret' 'ret_ln16' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.9ns.
+
+ <State 1>: 2.34ns
+The critical path consists of the following:
+	wire read on port 'temp_center' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [8]  (0 ns)
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 2>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 3>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 4>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 5>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 6>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 7>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('tmp', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:7) [13]  (2.34 ns)
+
+ <State 8>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 9>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 10>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 11>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 12>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 13>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 14>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp0', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:8) [15]  (2.34 ns)
+
+ <State 15>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [19]  (2.32 ns)
+
+ <State 16>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [19]  (2.32 ns)
+
+ <State 17>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [19]  (2.32 ns)
+
+ <State 18>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [19]  (2.32 ns)
+
+ <State 19>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [20]  (2.34 ns)
+
+ <State 20>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [20]  (2.34 ns)
+
+ <State 21>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:11) [20]  (2.34 ns)
+
+ <State 22>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 23>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 24>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 25>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 26>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 27>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 28>: 2.34ns
+The critical path consists of the following:
+	'fsub' operation ('tmp2', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:10) [18]  (2.34 ns)
+
+ <State 29>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12) [22]  (2.34 ns)
+
+ <State 30>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12) [22]  (2.34 ns)
+
+ <State 31>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12) [22]  (2.34 ns)
+
+ <State 32>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:12) [22]  (2.34 ns)
+
+ <State 33>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 34>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 35>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 36>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 37>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 38>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 39>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:13) [24]  (2.34 ns)
+
+ <State 40>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul1', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [25]  (2.32 ns)
+
+ <State 41>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul1', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [25]  (2.32 ns)
+
+ <State 42>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul1', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [25]  (2.32 ns)
+
+ <State 43>: 2.32ns
+The critical path consists of the following:
+	'fmul' operation ('mul1', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [25]  (2.32 ns)
+
+ <State 44>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 45>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 46>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 47>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 48>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 49>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+ <State 50>: 2.34ns
+The critical path consists of the following:
+	'fadd' operation ('temp_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:14) [26]  (2.34 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

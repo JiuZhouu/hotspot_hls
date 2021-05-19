@@ -1,0 +1,248 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+WARNING: [HLS 200-483] The 'config_flow -target' command is deprecated and will be removed in a future release. Use 'open_solution -flow_target' as its replacement.
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.9ns.
+INFO: [HLS 200-10] Analyzing design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp' ... 
+WARNING: [HLS 207-910] 'memcpy_wide_bus' macro redefined: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:25:9
+INFO: [HLS 207-71] previous definition is here: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:25:9
+WARNING: [HLS 207-910] 'instant_size' macro redefined: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:26:9
+INFO: [HLS 207-71] previous definition is here: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:26:9
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:26:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:46:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:66:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:86:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:107:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:129:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:152:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:174:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:197:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:414:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:596:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1292:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1810:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2046:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2248:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2387:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:32:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:132:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:252:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:353:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:474:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:582:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:710:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_2d.h:817:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:37:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:219:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:428:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:611:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:820:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:1007:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:1219:24
+WARNING: [HLS 207-3891] the 'self/all' option to 'Inline' pragma is not supported and will be ignored: /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus_4d.h:1405:24
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-131] Inlining function 'memcpy_wide_bus_read_float(float*, ap_uint<512>*, unsigned long, unsigned long)' into 'buffer_load' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:64:3)
+INFO: [HLS 214-131] Inlining function 'memcpy_wide_bus_read_float(float*, ap_uint<512>*, unsigned long, unsigned long)' into 'buffer_load' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:65:3)
+INFO: [HLS 214-131] Inlining function 'memcpy_wide_bus_write_float(ap_uint<512>*, float*, unsigned long, unsigned long)' into 'buffer_store' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:77:15)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_4' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:36:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:36:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_48_5' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:48:26) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:48:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_50_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:50:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:28:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:28:19)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+INFO: [HLS 214-178] Inlining function 'buffer_compute' into 'workload' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:82:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:55:40)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'temp1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1842:22)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'power1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1842:22)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'result1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2095:22)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38055 ; free virtual = 186850
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38055 ; free virtual = 186850
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38052 ; free virtual = 186848
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] /local-scratch/Xilinx/Vitis/2020.1/common/technology/autopilot/ap_int_ref.h:391: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38049 ; free virtual = 186844
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_2095_3' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2058) in function 'buffer_store.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_1842_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1822) in function 'buffer_load.1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'VITIS_LOOP_1842_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1822) in function 'buffer_load.1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_2099_4' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:2058) in function 'buffer_store.1' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_1851_3' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1822) in function 'buffer_load.1' completely with a factor of 16.
+INFO: [XFORM 203-101] Partitioning array 'result_inner_0' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:93) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_inner_0' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:95) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'power_inner_0' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:97) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'result_inner_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:100) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_inner_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:102) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'power_inner_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:104) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'result_inner_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:107) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_inner_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:109) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'power_inner_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:111) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:23) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:23) accessed through non-constant indices on dimension 1 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:30:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:23) in dimension 2 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 37982 ; free virtual = 186779
+INFO: [HLS 200-472] Inferring partial write operation for 'result' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:45:32)
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_dest' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/../../../common/mars_wide_bus.h:1856:41)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:51 ; elapsed = 00:00:51 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 37950 ; free virtual = 186748
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'workload' ...
+WARNING: [SYN 201-103] Legalizing function name 'buffer_load.1' to 'buffer_load_1'.
+WARNING: [SYN 201-103] Legalizing function name 'buffer_store.1' to 'buffer_store_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buffer_load_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1842_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_1842_2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 52.67 seconds; current allocated memory: 276.665 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.23 seconds; current allocated memory: 277.903 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot_stencil_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'hotspot_stencil_core'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 278.137 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 278.435 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 54.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 33.24 seconds; current allocated memory: 293.349 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.16 seconds; current allocated memory: 320.246 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'buffer_store_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_2095_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.42 seconds; current allocated memory: 328.730 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.13 seconds; current allocated memory: 329.234 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [HLS 200-871] Estimated clock period (2.48481ns) exceeds the target (target clock period: 3.333ns, clock uncertainty: 0.9ns, effective delay budget: 2.433ns).
+WARNING: [HLS 200-1016] The critical path in module 'workload' consists of the following:	'phi' operation ('k') with incoming values : ('k', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:134) [180]  (0 ns)
+	'xor' operation ('load_flag', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:135) [190]  (0.122 ns)
+	'call' operation ('_ln148', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_5_coalescing/src/hotspot.cpp:148) to 'buffer_load.1' [248]  (1.46 ns)
+	blocking operation 0.9 ns on control path)
+
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.2 seconds; current allocated memory: 330.211 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.04 seconds; current allocated memory: 331.651 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buffer_load_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buffer_load_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.14 seconds; current allocated memory: 334.235 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hotspot_stencil_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_7_full_dsp_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_7_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hotspot_stencil_core'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 338.390 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'hotspot' is 33298 from HDL expression: (1'b1 == ap_CS_fsm_state4)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hotspot'.
+INFO: [HLS 200-111]  Elapsed time: 1.48 seconds; current allocated memory: 359.891 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'buffer_store_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'buffer_store_1'.
+INFO: [HLS 200-111]  Elapsed time: 3.7 seconds; current allocated memory: 443.835 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/result1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/temp1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/power1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/result' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/temp' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/power' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'workload' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'result', 'temp', 'power' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'workload'.
+INFO: [HLS 200-111]  Elapsed time: 0.68 seconds; current allocated memory: 452.087 MB.

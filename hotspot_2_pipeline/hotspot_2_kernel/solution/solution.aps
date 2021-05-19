@@ -1,4 +1,10 @@
 <AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <config>
+        <config_interface m_axi_latency="64" m_axi_alignment_byte_size="64" m_axi_max_widen_bitwidth="512" default_interface="kernel" default_slave_interface="s_axilite" m_axi_addr64="1"/>
+        <config_rtl register_reset_num="3"/>
+        <config_export vivado_optimization_level="0" format="ip_catalog" ipname="workload"/>
+        <config_dataflow strict_mode="warning"/>
+    </config>
     <name>
         <value string="solution"/>
     </name>
@@ -13,12 +19,6 @@
         <library value="xilinx/virtexuplus/virtexuplus_fpv7" name="DefaultPlatform"/>
     </libraryList>
     <flowTarget value="vitis"/>
-    <config>
-        <config_interface m_axi_latency="64" m_axi_alignment_byte_size="64" m_axi_max_widen_bitwidth="512" default_interface="kernel" default_slave_interface="s_axilite" m_axi_addr64="1"/>
-        <config_rtl register_reset_num="3"/>
-        <config_export vivado_optimization_level="0" format="ip_catalog" ipname="workload"/>
-        <config_dataflow strict_mode="warning"/>
-    </config>
     <clockList>
         <clock default="false" name="default" uncertainty="27.000000%" period="300MHz"/>
     </clockList>

@@ -1,0 +1,256 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /local-scratch/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/local-scratch/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'yza616' on host 'ensc-hacc-6.research.sfu.ca' (Linux_x86_64 version 5.4.0-49-generic) on Tue May 18 19:43:20 PDT 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.2 LTS
+INFO: [HLS 200-10] In directory '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll'
+Sourcing Tcl script 'test.tcl'
+INFO: [HLS 200-10] Creating and opening project '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/hotspot_3_kernel'.
+INFO: [HLS 200-10] Adding design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/hotspot_3_kernel/solution'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1505.html
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+WARNING: [HLS 200-483] The 'config_flow -target' command is deprecated and will be removed in a future release. Use 'open_solution -flow_target' as its replacement.
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.9ns.
+INFO: [HLS 200-10] Analyzing design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_36_4' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:36:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:36:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_53_5' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:53:26) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:53:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:55:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_28_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:28:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:28:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:59:40)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:106:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:107:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:111:13)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:115:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:116:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:120:13)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38306 ; free virtual = 186848
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38306 ; free virtual = 186848
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38302 ; free virtual = 186845
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38299 ; free virtual = 186841
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.3' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.3' in function 'workload' automatically.
+INFO: [XFORM 203-101] Partitioning array 'result_inner' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:78) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_inner' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:80) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'power_inner' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:82) in dimension 1 with a cyclic factor 16.
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:23) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:23) accessed through non-constant indices on dimension 1 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:30:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-914.html
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:23) in dimension 2 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38228 ; free virtual = 186771
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_105_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:102:9) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_114_3' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:102:9) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_104_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:101:9) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[1]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[2]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[3]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[4]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[5]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[6]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[7]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[8]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[9]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[10]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[11]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[12]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[13]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[14]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[15]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[1]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[2]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[3]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[4]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[5]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[6]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[7]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[8]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[9]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[10]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[11]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[12]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[13]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[14]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner[15]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[1]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[2]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[3]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[4]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[5]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[6]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[7]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[8]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[9]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[10]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[11]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[12]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[13]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[14]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[15]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[0]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[1]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[2]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[3]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[4]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[5]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[6]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[7]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[8]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[9]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[10]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[11]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[12]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[13]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[14]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner[15]' 
+INFO: [HLS 200-472] Inferring partial write operation for 'result' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp:50:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38202 ; free virtual = 186746
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'workload' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot_stencil_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'hotspot_stencil_core'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 43.13 seconds; current allocated memory: 267.979 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 268.359 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_26_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_34_3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 54.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 34.18 seconds; current allocated memory: 283.292 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.15 seconds; current allocated memory: 310.194 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_105_2.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_105_2.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_105_2.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_114_3.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_114_3.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_114_3.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.79 seconds; current allocated memory: 320.585 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.09 seconds; current allocated memory: 325.307 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hotspot_stencil_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_7_full_dsp_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fsub_32ns_32ns_32_7_full_dsp_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hotspot_stencil_core'.
+INFO: [HLS 200-111]  Elapsed time: 1.15 seconds; current allocated memory: 326.178 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'hotspot' is 33298 from HDL expression: (1'b1 == ap_CS_fsm_state4)
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hotspot'.
+INFO: [HLS 200-111]  Elapsed time: 1.45 seconds; current allocated memory: 347.731 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/gmem1' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/gmem2' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/result' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/temp' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/power' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'workload' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'result', 'temp', 'power' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'mux_1664_32_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'workload'.
+INFO: [HLS 200-111]  Elapsed time: 3.96 seconds; current allocated memory: 438.306 MB.
+INFO: [RTMG 210-278] Implementing memory 'workload_result_inner_0_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'workload_temp_inner_0_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:32 ; elapsed = 00:01:34 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 37913 ; free virtual = 186551
+INFO: [VHDL 208-304] Generating VHDL RTL for workload.
+INFO: [VLOG 209-307] Generating Verilog RTL for workload.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 411.02 MHz
+HLS completed successfully
+INFO: [HLS 200-112] Total elapsed time: 94.17 seconds; peak allocated memory: 438.306 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue May 18 19:44:54 2021...

@@ -1,0 +1,149 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'hotspot_stencil_core'" level="0">
+<item name = "Date">Tue May 18 19:50:48 2021
+</item>
+<item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
+<item name = "Project">hotspot_5_kernel</item>
+<item name = "Solution">solution (Vitis Kernel Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu200-fsgd2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 2.342 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">49, 49, 0.163 us, 0.163 us, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 32, 3752, 2292, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, 864, 96, -</column>
+<specialColumn name="Available SLR">1440, 2280, 788160, 394080, 320</specialColumn>
+<specialColumn name="Utilization SLR (%)">0, 1, ~0, ~0, 0</specialColumn>
+<specialColumn name="Available">4320, 6840, 2364480, 1182240, 960</specialColumn>
+<specialColumn name="Utilization (%)">0, ~0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U39">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U40">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U41">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U44">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U46">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U47">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fadd_32ns_32ns_32_7_full_dsp_1_U48">fadd_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U49">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 78, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U50">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 78, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U51">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 78, 0</column>
+<column name="fmul_32ns_32ns_32_4_max_dsp_1_U52">fmul_32ns_32ns_32_4_max_dsp_1, 0, 3, 143, 78, 0</column>
+<column name="fsub_32ns_32ns_32_7_full_dsp_1_U42">fsub_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fsub_32ns_32ns_32_7_full_dsp_1_U43">fsub_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+<column name="fsub_32ns_32ns_32_7_full_dsp_1_U45">fsub_32ns_32ns_32_7_full_dsp_1, 0, 2, 318, 198, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add1_reg_164">32, 0, 32, 0</column>
+<column name="add2_reg_169">32, 0, 32, 0</column>
+<column name="mul1_reg_219">32, 0, 32, 0</column>
+<column name="mul6_reg_194">32, 0, 32, 0</column>
+<column name="mul8_reg_209">32, 0, 32, 0</column>
+<column name="mul_reg_184">32, 0, 32, 0</column>
+<column name="power_center_assign_1_reg_204">32, 0, 32, 0</column>
+<column name="power_center_assign_2_reg_214">32, 0, 32, 0</column>
+<column name="power_center_assign_reg_189">32, 0, 32, 0</column>
+<column name="power_center_int_reg">32, 0, 32, 0</column>
+<column name="power_center_read_reg_125">32, 0, 32, 0</column>
+<column name="temp_bottom_int_reg">32, 0, 32, 0</column>
+<column name="temp_center_int_reg">32, 0, 32, 0</column>
+<column name="temp_center_read_reg_130">32, 0, 32, 0</column>
+<column name="temp_left_int_reg">32, 0, 32, 0</column>
+<column name="temp_right_int_reg">32, 0, 32, 0</column>
+<column name="temp_top_int_reg">32, 0, 32, 0</column>
+<column name="tmp0_reg_174">32, 0, 32, 0</column>
+<column name="tmp1_reg_179">32, 0, 32, 0</column>
+<column name="tmp2_reg_199">32, 0, 32, 0</column>
+<column name="tmp_reg_158">32, 0, 32, 0</column>
+<column name="power_center_read_reg_125">64, 32, 32, 0</column>
+<column name="temp_center_read_reg_130">64, 32, 32, 0</column>
+<column name="tmp1_reg_179">64, 32, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hotspot_stencil_core, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, hotspot_stencil_core, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, hotspot_stencil_core, return value</column>
+<column name="temp_top">in, 32, ap_none, temp_top, scalar</column>
+<column name="temp_left">in, 32, ap_none, temp_left, scalar</column>
+<column name="temp_right">in, 32, ap_none, temp_right, scalar</column>
+<column name="temp_bottom">in, 32, ap_none, temp_bottom, scalar</column>
+<column name="temp_center">in, 32, ap_none, temp_center, scalar</column>
+<column name="power_center">in, 32, ap_none, power_center, scalar</column>
+</table>
+</item>
+</section>
+</profile>

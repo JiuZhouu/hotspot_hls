@@ -1,0 +1,67 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'workload'" level="0">
+<item name = "Date">Tue May 18 19:47:19 2021
+</item>
+<item name = "Version">2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)</item>
+<item name = "Project">hotspot_4_kernel</item>
+<item name = "Solution">solution (Vitis Kernel Flow Target)</item>
+<item name = "Product family">virtexuplus</item>
+<item name = "Target device">xcu200-fsgd2104-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 2.799 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">3297, 65097697, 10.989 us, 0.217 sec, 3298, 65097698, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_hotspot_fu_4349">hotspot, 2170, 2170, 7.233 us, 7.233 us, 2170, 2170, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_137_1">3296, 65097696, 103 ~ 2034303, -, -, 32, no</column>
+<column name=" + VITIS_LOOP_139_2">50, 1017150, 5 ~ 101715, -, -, 10, no</column>
+<column name="  ++ VITIS_LOOP_139_2.1">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.2">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.3">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.4">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.5">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.6">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.7">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.8">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_139_2.9">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name=" + VITIS_LOOP_159_3">50, 1017150, 5 ~ 101715, -, -, 10, no</column>
+<column name="  ++ VITIS_LOOP_159_3.1">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.2">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.3">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.4">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.5">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.6">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.7">33793, 33793, 3, 1, 1, 33792, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.8">32769, 32769, 3, 1, 1, 32768, yes</column>
+<column name="  ++ VITIS_LOOP_159_3.9">32769, 32769, 3, 1, 1, 32768, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,14 @@
+workload_fadd_32ns_32ns_32_7_full_dsp_1
+workload_fsub_32ns_32ns_32_7_full_dsp_1
+workload_fmul_32ns_32ns_32_4_max_dsp_1
+workload_result_inner_0_0
+workload_temp_inner_0_0
+workload_control_s_axi
+workload_result1_m_axi
+workload_temp1_m_axi
+workload_power1_m_axi
+buffer_load_1
+hotspot_stencil_core
+hotspot
+buffer_store_1
+workload

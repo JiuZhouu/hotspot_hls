@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hotspot'
 ================================================================
-* Date:           Tue May 18 19:38:08 2021
+* Date:           Tue May 18 19:42:07 2021
 
 * Version:        2020.1 (Build 2902540 on Wed May 27 20:16:15 MDT 2020)
 * Project:        hotspot_2_kernel
@@ -6693,23 +6693,23 @@ The critical path consists of the following:
 
  <State 3>: 1.16ns
 The critical path consists of the following:
-	'load' operation ('temp_rf[0][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [2099]  (1.16 ns)
-	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[0][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[0][64]' [2180]  (0 ns)
+	'load' operation ('temp_rf[1][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [2300]  (1.16 ns)
+	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[1][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[1][64]' [2468]  (0 ns)
 
  <State 4>: 1.16ns
 The critical path consists of the following:
-	'load' operation ('temp_rf[2][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [2501]  (1.16 ns)
-	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[2][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[2][64]' [2669]  (0 ns)
+	'load' operation ('temp_rf[3][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [2702]  (1.16 ns)
+	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[3][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[3][64]' [2822]  (0 ns)
 
  <State 5>: 1.16ns
 The critical path consists of the following:
-	'load' operation ('temp_rf[4][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [2903]  (1.16 ns)
-	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[4][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[4][64]' [2906]  (0 ns)
+	'load' operation ('temp_rf[5][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [3104]  (1.16 ns)
+	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[5][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[5][64]' [3167]  (0 ns)
 
  <State 6>: 1.16ns
 The critical path consists of the following:
-	'load' operation ('temp_rf[6][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [3305]  (1.16 ns)
-	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[6][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[6][64]' [3308]  (0 ns)
+	'load' operation ('temp_rf[7][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' [3506]  (1.16 ns)
+	'store' operation ('store_ln32', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) of variable 'temp_rf[7][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32 on local variable 'temp_rf[7][64]' [3608]  (0 ns)
 
  <State 7>: 1.16ns
 The critical path consists of the following:

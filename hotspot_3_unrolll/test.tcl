@@ -4,9 +4,9 @@ catch {::common::set_param -quiet hls.xocc.mode csynth};
 #
 
 set xocc_optimize_level 0
-open_project hotspot_0_kernel
+open_project hotspot_3_kernel
 set_top workload
-add_files "/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp"
+add_files "/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_3_unrolll/src/hotspot.cpp"
 open_solution solution
 set_part xcu200-fsgd2104-2-e
 create_clock -period 300MHz -name default
