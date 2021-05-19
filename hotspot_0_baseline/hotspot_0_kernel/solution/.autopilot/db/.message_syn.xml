@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp&apos; ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-777]" key="HLS 200-777" tag="" content="Using interface defaults for &apos;Vitis&apos; target." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Burst write of length 16384 and bit width 512 has been inferred on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:9:21)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Burst read of variable length and bit width 512 has been inferred on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:48:26)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 214-115]" key="HLS 214-115" tag="VITIS_INTERFACE" content="Burst read of variable length and bit width 512 has been inferred on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:64:26)" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38539 ; free virtual = 186855" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38539 ; free virtual = 186855" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38537 ; free virtual = 186853" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38537 ; free virtual = 186853" resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-510]" key="XFORM_AUTO_PIPELINE_STATUS_244" tag="" content="Pipelining loop &apos;VITIS_LOOP_10_2&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:7) in function &apos;hotspot.1&apos; automatically." resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;hotspot.1&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:7:17)...3 expression(s) balanced." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38515 ; free virtual = 186831" resolution=""/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;VITIS_LOOP_9_1&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:7:11) in function &apos;hotspot.1&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38513 ; free virtual = 186828" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;workload&apos; ..." resolution=""/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;hotspot.1&apos; to &apos;hotspot_1&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;hotspot_1&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;VITIS_LOOP_9_1_VITIS_LOOP_10_2&apos;." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-880]" key="HLS 200-880" tag="LOOP,SCHEDULE,VITIS_THROUGHPUT" content="The II Violation in module &apos;hotspot_1&apos; (Loop: VITIS_LOOP_9_1_VITIS_LOOP_10_2): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:64) and bus read on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:64)." resolution="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-880.html"/>
+	<Message severity="WARNING" prefix="[HLS 200-885]" key="HLS 200-885" tag="SCHEDULE,VITIS_KERNEL" content="Unable to schedule bus request on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:33) due to limited memory ports. Please consider using a memory core with more ports or partitioning the array." resolution="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-885.html"/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_39" tag="" content="Discarding stage scheduling solution." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-1470]" key="HLS 200-1470" tag="SCHEDULE,VITIS_THROUGHPUT" content="Pipelining result : Target II = 1, Final II = 22, Depth = 163." resolution=""/>
+	<Message severity="WARNING" prefix="[HLS 200-871]" key="HLS 200-871" tag="SCHEDULE,VITIS_KERNEL" content="Estimated clock period (12.4146ns) exceeds the target (target clock period: 3.333ns, clock uncertainty: 0.9ns, effective delay budget: 2.433ns)." resolution="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-871.html"/>
+	<Message severity="WARNING" prefix="[HLS 200-1016]" key="HLS 200-1016" tag="SCHEDULE,VITIS_KERNEL" content="The critical path in module &apos;hotspot_1&apos; consists of the following:	bus request on port &apos;gmem&apos; (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_0_baseline/src/hotspot.cpp:31) [132]  (2.43 ns)
+	blocking operation 9.98 ns on control path)" resolution="http://www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1016.html"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 10.54 seconds; current allocated memory: 168.085 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.38 seconds; current allocated memory: 177.656 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;workload&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..." resolution=""/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.99 seconds; current allocated memory: 177.935 MB." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..." resolution=""/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.07 seconds; current allocated memory: 178.109 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;hotspot_1&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;dadddsub_64ns_64ns_64_8_full_dsp_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;dmul_64ns_64ns_64_8_max_dsp_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;dsub_64ns_64ns_64_8_full_dsp_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;faddfsub_32ns_32ns_32_7_full_dsp_1&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;fmul_32ns_32ns_32_4_max_dsp_1&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;fpext_32ns_64_2_no_dsp_1&apos;: 2 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;fptrunc_64ns_32_2_no_dsp_1&apos;: 1 instance(s)." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;hotspot_1&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.59 seconds; current allocated memory: 188.269 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;workload&apos;" resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------" resolution=""/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_918" tag="" content="Design contains AXI ports. Reset is fixed to synchronous and active low." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;workload/gmem&apos; to &apos;m_axi&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;workload/result&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;workload/temp&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;workload/power&apos; to &apos;s_axilite &amp; ap_none&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;workload&apos; to &apos;s_axilite &amp; ap_ctrl_chain&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;result&apos;, &apos;temp&apos;, &apos;power&apos; to AXI-Lite port control." resolution=""/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;workload&apos;." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.73 seconds; current allocated memory: 204.659 MB." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38423 ; free virtual = 186773" resolution=""/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for workload." resolution=""/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for workload." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-790]" key="HLS 200-790" tag="LOOP,VITIS_KERNEL" content="**** Loop Constraint Status: All loop constraints were NOT satisfied." resolution=""/>
+	<Message severity="INFO" prefix="[HLS 200-789]" key="HLS 200-789" tag="THROUGHPUT,VITIS_KERNEL" content="**** Estimated Fmax: 80.55 MHz" resolution=""/>
+</Messages>
