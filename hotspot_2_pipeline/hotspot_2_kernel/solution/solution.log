@@ -1,0 +1,117 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+WARNING: [HLS 200-483] The 'config_flow -target' command is deprecated and will be removed in a future release. Use 'open_solution -flow_target' as its replacement.
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.9ns.
+INFO: [HLS 200-10] Analyzing design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_38_4' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:38:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:38:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_55_5' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:55:26) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:55:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_57_6' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19) in function 'hotspot' completely with a factor of 64 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:57:19)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_30_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:30:19) in function 'hotspot' completely with a factor of 16 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:30:19)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+WARNING: [HLS 214-167] The program may have out of bound array access (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:62:40)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:106:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:107:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:111:13)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:115:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:116:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:120:13)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38454 ; free virtual = 186860
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38454 ; free virtual = 186860
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38452 ; free virtual = 186857
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:27 ; elapsed = 00:00:27 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38448 ; free virtual = 186853
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.3' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.3' in function 'workload' automatically.
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:25) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:25) accessed through non-constant indices on dimension 1 (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'temp_rf' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:25) in dimension 2 completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38405 ; free virtual = 186811
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_105_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:102:9) in function 'workload' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_114_3' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:102:9) in function 'workload' more than one sub loop.
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_104_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:101:9) in function 'workload' more than one sub loop.
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'result' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:52:32)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:41 ; elapsed = 00:00:41 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38358 ; free virtual = 186764
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'workload' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot_stencil_core' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'hotspot_stencil_core'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 50.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 42.97 seconds; current allocated memory: 262.193 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 262.576 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_28_1'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('temp_rf[2][0]', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:32) on array 'temp' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'temp'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 8, Depth = 9.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_36_3'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('power_center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_2_pipeline/src/hotspot.cpp:50) on array 'power' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'power'.
+INFO: [SCHED 204-61] Discarding stage scheduling solution.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 8, Depth = 61.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 38.39 seconds; current allocated memory: 280.405 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.32 seconds; current allocated memory: 316.259 MB.

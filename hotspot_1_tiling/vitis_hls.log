@@ -1,0 +1,134 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source /local-scratch/Xilinx/Vitis/2020.1/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running '/local-scratch/Xilinx/Vitis/2020.1/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'yza616' on host 'ensc-hacc-6.research.sfu.ca' (Linux_x86_64 version 5.4.0-49-generic) on Tue May 18 19:33:33 PDT 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.2 LTS
+INFO: [HLS 200-10] In directory '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling'
+Sourcing Tcl script 'test.tcl'
+INFO: [HLS 200-10] Creating and opening project '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/hotspot_1_kernel'.
+INFO: [HLS 200-10] Adding design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/hotspot_1_kernel/solution'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-1505.html
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 3.333ns.
+WARNING: [HLS 200-483] The 'config_flow -target' command is deprecated and will be removed in a future release. Use 'open_solution -flow_target' as its replacement.
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_latency=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-435] Setting 'config_flow -target' configuration: config_rtl -register_reset_num=3
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 0.9ns.
+INFO: [HLS 200-10] Analyzing design file '/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:67:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:68:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:72:13)
+INFO: [HLS 214-115] Burst read of length 2112 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:76:13)
+INFO: [HLS 214-115] Burst read of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:77:13)
+INFO: [HLS 214-115] Burst write of length 2048 and bit width 512 has been inferred on port 'gmem' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:81:13)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38510 ; free virtual = 186888
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38510 ; free virtual = 186888
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38508 ; free virtual = 186886
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38508 ; free virtual = 186886
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_10_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:10) in function 'hotspot' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.1.3' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.1' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.2' in function 'workload' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2.2.3' in function 'workload' automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:10:35) in function 'hotspot'... converting 9 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38489 ; free virtual = 186867
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_66_2' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:65:13) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_75_3' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:65:13) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_64_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:63:9) in function 'workload' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'VITIS_LOOP_9_1' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:9:30) in function 'hotspot'.
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'temp_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'power_inner' 
+INFO: [HLS 200-472] Inferring partial write operation for 'result' (/localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:23:31)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38487 ; free virtual = 186865
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'workload' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_9_1_VITIS_LOOP_10_2'.
+WARNING: [HLS 200-885] Unable to schedule 'load' operation ('center', /localhdd/zyx/rodinia-hls/Benchmarks/hotspot/hotspot_1_tiling/src/hotspot.cpp:12) on array 'temp' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'temp'.
+Resolution: For help on HLS 200-885 see www.xilinx.com/html_docs/xilinx2020_1/hls-guidance/200-885.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 55.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.34 seconds; current allocated memory: 155.511 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 156.184 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_2.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_2.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_2.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_3.1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_3.2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_75_3.3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 157.593 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.58 seconds; current allocated memory: 160.650 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hotspot' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_7_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'faddfsub_32ns_32ns_32_7_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_4_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hotspot'.
+INFO: [HLS 200-111]  Elapsed time: 0.22 seconds; current allocated memory: 162.014 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'workload' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/result' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/temp' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'workload/power' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'workload' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'result', 'temp', 'power' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'workload'.
+INFO: [HLS 200-111]  Elapsed time: 0.39 seconds; current allocated memory: 169.106 MB.
+INFO: [RTMG 210-278] Implementing memory 'workload_result_inner_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'workload_temp_inner_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1684.457 ; gain = 1235.910 ; free physical = 38447 ; free virtual = 186835
+INFO: [VHDL 208-304] Generating VHDL RTL for workload.
+INFO: [VLOG 209-307] Generating Verilog RTL for workload.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 411.02 MHz
+HLS completed successfully
+INFO: [HLS 200-112] Total elapsed time: 10.81 seconds; peak allocated memory: 169.106 MB.
+INFO: [Common 17-206] Exiting vitis_hls at Tue May 18 19:33:44 2021...
